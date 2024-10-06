@@ -3,4 +3,6 @@ pandas
 nltk
 scikit-learn
 gensim
-tqdm
+tqdm 
+dask[complete]
+dask-ml
