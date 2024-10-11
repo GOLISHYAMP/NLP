@@ -6,3 +6,5 @@ gensim
 tqdm 
 dask[complete]
 dask-ml
+beautifulsoup4
+lxml
