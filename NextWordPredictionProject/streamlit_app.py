@@ -33,10 +33,10 @@ on = st.toggle("Use GRU model")
 if on:
     st.write("Using GRU model!")
     # Load the model
-    model = load_model(os.path.join(cwd,'next_word_gru.h5'))
+    model = load_model(os.path.join(cwd,'next_word_gru.h5'), compile=True)
 else:
     st.write("Using LSTM model!")
-    model = load_model(os.path.join(cwd,'next_word_lstm.h5'))
+    model = load_model(os.path.join(cwd,'next_word_lstm.h5'), compile=True)
 
 if st.button('predict next word'):
     max_len_sequence = model.input_shape[1]+1
