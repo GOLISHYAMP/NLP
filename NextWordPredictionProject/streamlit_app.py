@@ -1,7 +1,7 @@
 import streamlit as st
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model # type: ignore
 import pickle
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.sequence import pad_sequences # type: ignore
 import numpy as np
 import os
 
